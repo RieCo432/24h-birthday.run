@@ -2,10 +2,10 @@ html {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	background-color: #ffffff;
 	}
 
 body {
-	background-image: url(stadium_schematic.png);
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -19,6 +19,14 @@ body {
 	padding: 5%;
 	border: none;
 	}
+	
+#background-image {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
 
 .content {
 	color: rgba(255,255,255,0.65);
