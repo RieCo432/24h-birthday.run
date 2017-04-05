@@ -46,7 +46,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-teal.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
     #view-source {
@@ -72,13 +72,13 @@
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
-          <a href="#features" class="mdl-layout__tab">The Event</a>
-          <a href="#features" class="mdl-layout__tab">The Run</a>
-          <a href="#features" class="mdl-layout__tab">The Location</a>
-          <a href="#features" class="mdl-layout__tab">FAQ</a>
+          <a href="#theevent" class="mdl-layout__tab">The Event</a>
+          <a href="#therun" class="mdl-layout__tab">The Run</a>
+          <a href="#media" class="mdl-layout__tab">Media</a>
+          <a href="#faq" class="mdl-layout__tab">FAQ</a>
           <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-            <i class="material-icons" role="presentation">search</i>
-            <span class="visuallyhidden">Search</span>
+            <i class="material-icons" role="presentation">date_range</i>
+            <span class="visuallyhidden">Add to calendar</span>
           </button>
         </div>
       </header>
@@ -94,7 +94,7 @@
                 This event is intended as a birthday party to celebrate three birthdays. It is a public event, so everyone is welcome. There will be a 24h run, where participants donate a certain amount of money per kilometer they run. Furthermore there will be a small donation for every drink and piece of food sold.
               </div>
               <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Learn more</a>
+                <a href="index.html#theevent" class="mdl-button">Learn more</a>
               </div>
             </div>
           </section>
@@ -113,19 +113,19 @@
                   <div class="section__circle-container__circle mdl-color--primary"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
+                  <h5>Team Run</h5>
                   Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   <div class="section__circle-container__circle mdl-color--primary"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                  <h5>No Run</h5>
+                  Just sit back, have a beer and enjoy the party! Please remember that you can also donate without running a single meter, although the satisfaction won't be that great.
                 </div>
               </div>
               <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
+                <a href="#therun" class="mdl-button">Learn more</a>
               </div>
             </div>
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
@@ -173,61 +173,59 @@
             </div>
           </section>
         </div>
-        <div class="mdl-layout__tab-panel" id="features">
+        <div class="mdl-layout__tab-panel" id="theevent">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
-              <h4>Features</h4>
-              Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+              <h4>The Event</h4>
+              On this page you should find all information you need regarding the event itself. If you are searching for information regarding the run, please visit <a href="#therun">this page</a>.
               <ul class="toc">
                 <h4>Contents</h4>
-                <a href="#lorem1">Lorem ipsum</a>
-                <a href="#lorem2">Lorem ipsum</a>
-                <a href="#lorem3">Lorem ipsum</a>
-                <a href="#lorem4">Lorem ipsum</a>
-                <a href="#lorem5">Lorem ipsum</a>
+                <a href="#what">What?</a>
+                <a href="#why">Why?</a>
+                <a href="#where">Where?</a>
+                <a href="#when">When?</a>
               </ul>
 
-              <h5 id="lorem1">Lorem ipsum dolor sit amet</h5>
-              Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
+              <h5 id="what">What?</h5>
+              Primarily this event is a birthday party to celebrate the following three birthdays:
               <ul>
-                <li>Nisi qui nisi duis commodo duis reprehenderit consequat velit aliquip.</li>
-                <li>Dolor consectetur incididunt in ipsum laborum non et irure pariatur excepteur anim occaecat officia sint.</li>
-                <li>Lorem labore proident officia excepteur do.</li>
+                <li>Colin Ries, 18 (09.07)</li>
+                <li>Manon Schockmel, 50 (08.07)</li>
+                <li>Pascal Ries, 52 (13.07)</li>
               </ul>
 
               <p>
-                Sit qui est voluptate proident minim cillum in aliquip cupidatat labore pariatur id tempor id. Proident occaecat occaecat sint mollit tempor duis dolor cillum anim. Dolore sunt ea mollit fugiat in aliqua consequat nostrud aliqua ut irure in dolore. Proident aliqua culpa sint sint exercitation. Non proident occaecat reprehenderit veniam et proident dolor id culpa ea tempor do dolor. Nulla adipisicing qui fugiat id dolor. Nostrud magna voluptate irure veniam veniam labore ipsum deserunt adipisicing laboris amet eu irure. Sunt dolore nisi velit sit id. Nostrud voluptate labore proident cupidatat enim amet Lorem officia magna excepteur occaecat eu qui. Exercitation culpa deserunt non et tempor et non.
+                Secondarily, it is a public running event, with the goal being to collect money for "Make a Wish" and "S.O.S. Village d'Enfants Monde" for every kilometer ran.
               </p>
               <p>
-                Do dolor eiusmod eu mollit dolore nostrud deserunt cillum irure esse sint irure fugiat exercitation. Magna sit voluptate id in tempor elit veniam enim cupidatat ea labore elit. Aliqua pariatur eu nulla labore magna dolore mollit occaecat sint commodo culpa. Eu non minim duis pariatur Lorem quis exercitation. Sunt qui ex incididunt sit anim incididunt sit elit ad officia id.
+                The events is over 24 hours long, while the run is exactly 24 hours. No-one is obliged to take part or stay on-site the whole time. However, those who want can stay there all the time, bring sleeping bags or just stay up. There's breakfast in the morning and meals during afternoon and evening. Drinks are of course also available. A part of the  revenue generated by selling food and drinks is also going to the above-mentionned organisations.
               </p>
-              <p id="lorem2">
-                Tempor voluptate ex consequat fugiat aliqua. Do sit et reprehenderit culpa deserunt culpa. Excepteur quis minim mollit irure nulla excepteur enim quis in laborum. Aliqua elit voluptate ad deserunt nulla reprehenderit adipisicing sint. Est in eiusmod exercitation esse commodo. Ea reprehenderit exercitation veniam adipisicing minim nostrud. Veniam dolore ex ea occaecat non enim minim id ut aliqua adipisicing ad. Occaecat excepteur aliqua tempor cupidatat aute dolore deserunt ipsum qui incididunt aliqua occaecat sit quis. Culpa sint aliqua aliqua reprehenderit veniam irure fugiat ea ad.
+              <h5 id="why">Why?</h5>
+			  <p>
+				We organized this party because we want to have a big celebration for these two special birthdays, 18 and 50. Plus, we thought this is a perfect opportunity to raise awareness that other people don't have the same luck as we do and help them at the same time.
               </p>
+			  <h5 id="where">Where?</h5>
               <p>
-                Eu minim fugiat laborum irure veniam Lorem aliqua enim. Aliqua veniam incididunt consequat irure consequat tempor do nisi deserunt. Elit dolore ad quis consectetur sint laborum anim magna do nostrud amet. Ea nulla sit consequat quis qui irure dolor. Sint deserunt excepteur consectetur magna irure. Dolor tempor exercitation dolore pariatur incididunt ut laboris fugiat ipsum sunt veniam aute sunt labore. Non dolore sit nostrud eu ad excepteur cillum eu ex Lorem duis.
-              </p>
+				The party is set to take place at the "Stade Athlétique Schifflange", which can be found at the top end of "Montée du cimetière" in Schifflange.</br>49.50085 N, 6.0044 E
+			  </p>
+			  <h5 id="when">When?</h5>
               <p>
-                Id occaecat velit non ipsum occaecat aliqua quis ut. Eiusmod est magna non esse est ex incididunt aute ullamco. Cillum excepteur sint ipsum qui quis velit incididunt amet. Qui deserunt anim enim laborum cillum reprehenderit duis mollit amet ad officia enim. Minim sint et quis aliqua aliqua do minim officia dolor deserunt ipsum laboris. Nulla nisi voluptate consectetur est voluptate et amet. Occaecat ut quis adipisicing ad enim. Magna est magna sit duis proident veniam reprehenderit fugiat reprehenderit enim velit ex. Ullamco laboris culpa irure aliquip ad Lorem consequat veniam ad ipsum eu. Ipsum culpa dolore sunt officia laborum quis.
-              </p>
-
-              <h5 id="lorem3">Lorem ipsum dolor sit amet</h5>
-
-              <p id="lorem4">
-                Eiusmod nulla aliquip ipsum reprehenderit nostrud non excepteur mollit amet esse est est dolor. Dolore quis pariatur sit consectetur veniam esse ullamco duis Lorem qui enim ut veniam. Officia deserunt minim duis laborum dolor in velit pariatur commodo ullamco eu. Aute adipisicing ad duis labore laboris do mollit dolor cillum sunt aliqua ullamco. Esse tempor quis cillum consequat reprehenderit. Adipisicing proident anim eu sint elit aliqua anim dolore cupidatat fugiat aliquip qui.
-              </p>
-              <p id="lorem5">
-                Nisi eiusmod esse cupidatat excepteur exercitation ipsum reprehenderit nostrud deserunt aliqua ullamco. Anim est irure commodo eiusmod pariatur officia. Est dolor ipsum excepteur magna aliqua ad veniam irure qui occaecat eiusmod aute fugiat commodo. Quis mollit incididunt amet sit minim velit eu fugiat voluptate excepteur. Sit minim id pariatur ex cupidatat cupidatat nostrud nostrud ipsum.
-              </p>
-              <p>
-                Enim ea officia excepteur ad veniam id reprehenderit eiusmod esse mollit consequat. Esse non aute ullamco Lorem aliqua qui dolore irure eiusmod aute aliqua proident labore aliqua. Ipsum voluptate voluptate exercitation laborum deserunt nulla elit aliquip et minim ex veniam. Duis cupidatat aute sunt officia mollit dolor ad elit ad aute labore nostrud duis pariatur. In est sint voluptate consectetur velit ea non labore. Ut duis ea aliqua consequat nulla laboris fugiat aute id culpa proident. Minim eiusmod laboris enim Lorem nisi excepteur mollit voluptate enim labore reprehenderit officia mollit.
-              </p>
-              <p>
-                Cupidatat labore nisi ut sunt voluptate quis sunt qui ad Lorem esse nisi. Ex esse velit ullamco incididunt occaecat dolore veniam tempor minim adipisicing amet. Consequat in exercitation est elit anim consequat cillum sint labore cillum. Aliquip mollit laboris ad labore anim.
+				The event and the run will start on Friday evening at 7 pm. The run will end on Saturday evening at 7 pm, the party however will continue into the night to Sunday.
               </p>
             </div>
           </section>
         </div>
+		
+		<div class="mdl-layout__tab-panel" id="therun">
+		  <section class="section--center mdl-grid mdl-grid--no-spacing">
+			<div class="mdl-cell mdl-cell--12-col">
+			  <h4>The run</h4>
+				This page offers all the information you need to know if you want to participate in the run. If you are looking for information on the event itself, check out <a href="#theevent">this page</a>.
+		
+			</div>
+		  </section>
+		</div>
+		
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
             <div class="mdl-mega-footer--drop-down-section">
