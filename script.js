@@ -5,7 +5,7 @@ $(document).ready(function(){
 			var viewRequested = hrefClicked.substring(hrefClicked.indexOf("#") + 1);
 			$(".is-active").removeClass("is-active");
 			$("#"+viewRequested).addClass("is-active");
-			$('a[href="#'+viewRequested+'" class="mdl-layout__tab"]').addClass("is-active");
+			$(".tablink_"+viewRequested).addClass("is-active");
 		}
 	});
 })
