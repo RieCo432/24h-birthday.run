@@ -76,15 +76,15 @@
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="#overview" class="mdl-layout__tab tablink_overview is-active">Overview</a>
-          <a href="#theevent" class="mdl-layout__tab tablink_theevent">The Event</a>
-          <a href="#therun" class="mdl-layout__tab tablink_therun">The Run</a>
-          <a href="#thelocation" class="mdl-layout__tab tablink_thelocation">The Location</a>
-          <a href="#media" class="mdl-layout__tab tablink_media">Media</a>
-          <a href="#faq" class="mdl-layout__tab tablink_faq">FAQ</a>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+          <a href="#theevent" class="mdl-layout__tab tablink_theevent"><span id="theevent_header">The Event</span></a>
+          <a href="#therun" class="mdl-layout__tab tablink_therun"><span id="therun_header">The Run</span></a>
+          <a href="#thelocation" class="mdl-layout__tab tablink_thelocation"><span id="thelocation_header">The Location</span></a>
+          <a href="#media" class="mdl-layout__tab tablink_media"><span id="media_header">Media</span></a>
+          <a href="#faq" class="mdl-layout__tab tablink_faq"><span id="faq_header">FAQ</span></a>
+          <!--<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
             <i class="material-icons" role="presentation">date_range</i>
             <span class="visuallyhidden">Add to calendar</span>
-          </button>
+          </button>-->
         </div>
       </header>
       <main class="mdl-layout__content">
@@ -95,42 +95,42 @@
             </header>
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4>The Event</h4>
-                This event is intended as a birthday party to celebrate three birthdays. It is a public event, so everyone is welcome. There will be a 24h run, where participants donate a certain amount of money per kilometer they run. Furthermore there will be a small donation for every drink and piece of food sold.
+                <h4><span id="theevent_header">The Event</span></h4>
+                <span id="overview_theevent_text">This event is intended as a birthday party to celebrate three birthdays. It is a public event, so everyone is welcome. There will be a 24h run, where participants donate a certain amount of money per kilometer they run. Furthermore there will be a small donation for every drink and piece of food sold.</span>
               </div>
               <div class="mdl-card__actions">
-                <a href="#theevent" class="mdl-button">Learn more</a>
+                <a href="#theevent" class="mdl-button"><span id="learn_more">Learn more</span></a>
               </div>
             </div>
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">The Run</h4>
+                <h4 class="mdl-cell mdl-cell--12-col"><span id="therun_header">The Run</span></h4>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   <div class="section__circle-container__circle mdl-color--primary"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Single Run</h5>
-                  Just as the name says, in this run you are on your own, but don't be afraid, you don't have to run for 24 hours straight <a href="#therun">continue reading...</a>
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Team Run</h5>
-                  The team run is intended to be 24 hours long, but teams don't have to run for a total of 24 hours <a href="#therun">continue reading...</a>
+                  <h5><span id="singlerun_header">Single Run</span></h5>
+                  <span id="overview_therun_singlerun_text">Just as the name says, in this run you are on your own, but don't be afraid, you don't have to run for 24 hours straight </span><a href="#therun"><span id="learn_more">Learn more</span></a>
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   <div class="section__circle-container__circle mdl-color--primary"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>No Run</h5>
-                  Just sit back, have a drink and enjoy the party! Please remember that you can also donate without running a single meter, although the satisfaction won't be that great.
+                  <h5><span id="teamrun_header">Team Run</span></h5>
+                  <span id="overview_therun_teamrun_text">The team run is intended to be 24 hours long, but teams don't have to run for a total of 24 hours </span><a href="#therun"><span id="learn_more">Learn more</span></a>
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5><span id="norun_header">No Run</span></h5>
+                  <span id="overview_therun_norun_text">Just sit back, have a drink and enjoy the party! Please remember that you can also donate without running a single meter, although the satisfaction won't be that great.</span>
                 </div>
               </div>
               <div class="mdl-card__actions">
-                <a href="#therun" class="mdl-button">Learn more</a>
+                <a href="#therun" class="mdl-button"><span id="learn_more">Learn more</span></a>
               </div>
             </div>
           </section>
@@ -140,54 +140,54 @@
             </div>
             <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
               <h5>"Make a Wish"</h5>
-              Make a Wish is an organization that aims to fulfill the wishes of children that have been diagnosed with an uncurable disease. You can checkout their website here: <a href="http://make-a-wish.lu">make-a-wish.lu</a>
+              <span id="makeawish_text">Make a Wish is an organization that aims to fulfill the wishes of children that have been diagnosed with an uncurable disease. You can checkout their website here: </span><a href="http://make-a-wish.lu">make-a-wish.lu</a>
             </div>
             <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
               <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
             </div>
             <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
               <h5>"S.O.S. Village d'enfants monde"</h5>
-              S.O.S. Village d'enfants monde focusses on building foster communities to offer a home to children that for whatever reason cannot enjoy growing up with their biological parents. Learn more at <a href="http://sosve.lu">sosve.lu</a>
+              <span id="sosvillagedenfantsmonde_text">S.O.S. Village d'enfants monde focusses on building foster communities to offer a home to children that for whatever reason cannot enjoy growing up with their biological parents. Learn more at </span><a href="http://sosve.lu">sosve.lu</a>
             </div>
           </section>
         </div>
         <div class="mdl-layout__tab-panel" id="theevent">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
-              <h4>The Event</h4>
-              On this page you should find all information you need regarding the event itself. If you are searching for information regarding the run, please visit <a href="#therun">this page</a>.
+              <h4><span id="theevent_header">The Event</span></h4>
+              <span id="theevent_intro">On this page you should find all information you need regarding the event itself. If you are searching for information regarding the run, please visit </span><a href="#therun"><span id="this_page">this page</span></a>.
               <ul class="toc">
-                <h4>Contents</h4>
-                <a href="#what">What?</a>
-                <a href="#why">Why?</a>
-                <a href="#where">Where?</a>
-                <a href="#when">When?</a>
+                <h4><span id="contents">Contents</span></h4>
+                <a href="#what"><span id="what">What?</span></a>
+                <a href="#why"><span id="why">Why?</span></a>
+                <a href="#where"><span id="where">Where?</span></a>
+                <a href="#when"><span id="when">When?</span></a>
               </ul>
 
-              <h5 id="what">What?</h5>
-              Primarily this event is a birthday party to celebrate the following three birthdays:
+              <h5 id="what"><span id="what">What?</span></h5>
+              <span id="theevent_what1">Primarily this event is a birthday party to celebrate the following three birthdays:</span>
               <ul>
                 <li>Colin Ries, 18 (09.07)</li>
                 <li>Manon Schockmel, 50 (08.07)</li>
                 <li>Pascal Ries, 52 (13.07)</li>
               </ul>
               <p>
-                Secondarily, it is a public running event, with the goal being to collect money for "Make a Wish" and "S.O.S. Village d'Enfants Monde" for every kilometer ran.
+                <span id="theevent_what2">Secondarily, it is a public running event, with the goal being to collect money for "Make a Wish" and "S.O.S. Village d'Enfants Monde" for every kilometer ran.</span>
               </p>
               <p>
-                The events is over 24 hours long, while the run is exactly 24 hours. No-one is obliged to take part or stay on-site the whole time. However, those who want can stay there all the time, bring sleeping bags or just stay up. There's breakfast in the morning and meals during afternoon and evening. Drinks are of course also available. A part of the  revenue generated by selling food and drinks is also going to the above-mentionned organisations.
+                <span id="theevent_what3">The events is over 24 hours long, while the run is exactly 24 hours. No-one is obliged to take part or stay on-site the whole time. However, those who want can stay there all the time, bring sleeping bags or just stay up. There's breakfast in the morning and meals during afternoon and evening. Drinks are of course also available. A part of the  revenue generated by selling food and drinks is also going to the above-mentionned organisations.</span>
               </p>
-              <h5 id="why">Why?</h5>
+              <h5 id="why"><span id="why">Why?</span></h5>
               <p>
-                We organized this party because we want to have a big celebration for these two special birthdays, 18 and 50. Plus, we thought this is a perfect opportunity to raise awareness that other people don't have the same luck as we do and help them at the same time.
+                <span id="theevent_why1">We organized this party because we want to have a big celebration for these two special birthdays, 18 and 50. Plus, we thought this is a perfect opportunity to raise awareness that other people don't have the same luck as we do and help them at the same time.</span>
               </p>
-              <h5 id="where">Where?</h5>
+              <h5 id="where"><span id="where">Where?</span></h5>
               <p>
-                The party is set to take place at the "Stade Athlétique Schifflange", which can be found at the top end of "Montée du cimetière" in Schifflange.</br>49.50085 N, 6.0044 E
+                <span id="theevent_where1">The party is set to take place at the "Stade Athlétique Schifflange", which can be found at the top end of "Montée du cimetière" in Schifflange.</span></br>49.50085 N</br>6.0044 E
               </p>
-              <h5 id="when">When?</h5>
+              <h5 id="when"><span id="when">When?</span></h5>
               <p>
-                The event and the run will start on Friday evening at 8 pm. The run will end on Saturday evening at 8 pm, the party however will continue into the night to Sunday.
+                <span id="theevent_when1">The event and the run will start on Friday evening at 8 pm. The run will end on Saturday evening at 8 pm, the party however will continue into the night to Sunday.</span>
               </p>
             </div>
           </section>
@@ -195,21 +195,21 @@
 	<div class="mdl-layout__tab-panel" id="therun">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
-              <h4>The run</h4>
-                This page offers all the information you need to know if you want to participate in the run. If you are looking for information on the event itself, check out <a href="#theevent">this page</a>.
+              <h4><span id="therun_header">The run</span></h4>
+                <span id="therun_intro">This page offers all the information you need to know if you want to participate in the run. If you are looking for information on the event itself, check out </span><a href="#theevent"><span id="this_page">this page</span></a>.
             </div>
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4>Registration</h4>
+                <h4><span id="registration">Registration</span></h4>
                 <iframe src="reg.html" frameboarder="0" onload="this.style.height=this.contentDocument.html.scrollHeight +'px';" height="400px"></iframe>
             </div>
           </section>	  
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4>Participants</h4>
+                <h4><span id="participants">Participants</span></h4>
                 <div id="divRRPublish" class="RRPublish"></div>
                 <script type="text/javascript" src="http://my.raceresult.com/RRPublish/load.js.php?lang=de"></script>
                 <script type="text/javascript">
@@ -231,41 +231,26 @@
           <div class="mdl-mega-footer--middle-section">
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Features</h1>
+              <h1 class="mdl-mega-footer--heading"><span id="sections">Sections</span></h1>
               <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Updates</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Details</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Spec</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
+                <li><a href="#overview"><span id="overview_header">Overview</span></a></li>
+                <li><a href="#theevent"><span id="theevent_header">The Event</span></a></li>
+                <li><a href="#therun"><span id="therun_header">The Run</span></a></li>
+                <li><a href="#thelocation"><span id="thelocation_header">The Location</span></a></li>
+                <li><a href="#media"><span id="media_header">Media</span></a></li>
+                <li><a href="#faq"><span id="faq_header">FAQ</span></a></li>
               </ul>
             </div>
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
               <h1 class="mdl-mega-footer--heading">Contact</h1>
               <ul class="mdl-mega-footer--link-list">
-                <li><a href="mailto:24h.birthday.run@gmail.com">Email us</a></li>
-                <li><a href="#">Contact form</a></li>
+                <li><a href="mailto:24h.birthday.run@gmail.com"><span id="email_us">Email us</span></a></li>
+                <li><a href="#"><span id="contact_form">Contact form</span></a></li>
                 <li>+352 56 07 32 1</li>
                 <li></li>
                 <li>12, Avenue du Rock'n'Roll</li>
                 <li>L-4361 Esch-sur-Alzette</li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">FAQ</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
               </ul>
             </div>
           </div>
