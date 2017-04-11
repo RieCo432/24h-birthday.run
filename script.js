@@ -222,7 +222,7 @@ $(document).ready(function(){
 
 	function changeLang(desiredLang) {
 		
-		if (desiredLang === "de-DE") {
+		if (desiredLang === "de-DE" || desiredLang === "de") {
 
 			$(".overview_header").text(overview_header_de);
 			$(".theevent_header").text(theevent_header_de);
@@ -287,7 +287,7 @@ $(document).ready(function(){
 			$(".therun_rules_cleanliness_header").text(therun_rules_cleanliness_header_de);
 			$(".therun_rules_cleanliness1").text(therun_rules_cleanliness1_de);			
 
-		} else if (desiredLang === "fr-FR") {
+		} else if (desiredLang === "fr-FR" || desiredLang === "fr") {
 
 			$(".overview_header").text(overview_header_fr);
 			$(".theevent_header").text(theevent_header_fr);
