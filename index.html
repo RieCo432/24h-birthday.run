@@ -80,9 +80,9 @@
           <a href="#overview" class="mdl-layout__tab tablink_overview is-active"><span class="overview_header">Overview</span></a>
           <a href="#theevent" class="mdl-layout__tab tablink_theevent"><span class="theevent_header">The Event</span></a>
           <a href="#therun" class="mdl-layout__tab tablink_therun"><span class="therun_header">The Run</span></a>
-          <a href="#thelocation" class="mdl-layout__tab tablink_thelocation"><span class="thelocation_header">The Location</span></a>
+          <!--<a href="#thelocation" class="mdl-layout__tab tablink_thelocation"><span class="thelocation_header">The Location</span></a>
           <a href="#media" class="mdl-layout__tab tablink_media"><span class="media_header">Media</span></a>
-          <a href="#faq" class="mdl-layout__tab tablink_faq"><span class="faq_header">FAQ</span></a>
+          <a href="#faq" class="mdl-layout__tab tablink_faq"><span class="faq_header">FAQ</span></a>-->
           <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="change_lang">
             <i class="material-icons" role="presentation">language</i>
             <span class="visuallyhidden">Add to calendar</span>
@@ -115,7 +115,7 @@
                 <span class="overview_theevent_text">This event is intended as a birthday party to celebrate three birthdays. It is a public event, so everyone is welcome. There will be a 24h run, party, food and drinks and the main goal is to collect some money for a good cause.</span>
               </div>
               <div class="mdl-card__actions">
-                <a href="#theevent" class="mdl-button"><span class="learn_more">Learn more</span></a>
+                <a href="#theevent" class="mdl-button tabswitch"><span class="learn_more">Learn more</span></a>
               </div>
             </div>
           </section>
@@ -128,14 +128,14 @@
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                   <h5><span class="singlerun_header">Single Run</span></h5>
-                  <span class="overview_therun_singlerun_text">Just as the name says, in this run you are on your own, but don't be afraid, you don't have to run for 24 hours straight </span><a href="#therun"><span class="learn_more">Learn more</span></a>
+                  <span class="overview_therun_singlerun_text">Just as the name says, in this run you are on your own, but don't be afraid, you don't have to run for 24 hours straight </span><a href="#therun" class="tabswitch"><span class="learn_more">Learn more</span></a>
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   <div class="section__circle-container__circle mdl-color--primary"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                   <h5><span class="teamrun_header">Team Run</span></h5>
-                  <span class="overview_therun_teamrun_text">The team run is intended to be 24 hours long, but teams don't have to run for a total of 24 hours </span><a href="#therun"><span class="learn_more">Learn more</span></a>
+                  <span class="overview_therun_teamrun_text">The team run is intended to be 24 hours long, but teams don't have to run for a total of 24 hours </span><a href="#therun" class="tabswitch"><span class="learn_more">Learn more</span></a>
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   <div class="section__circle-container__circle mdl-color--primary"></div>
@@ -146,7 +146,7 @@
                 </div>
               </div>
               <div class="mdl-card__actions">
-                <a href="#therun" class="mdl-button"><span class="learn_more">Learn more</span></a>
+                <a href="#therun" class="mdl-button tabswitch"><span class="learn_more">Learn more</span></a>
               </div>
             </div>
           </section>
@@ -171,7 +171,7 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
               <h4><span class="theevent_header">The Event</span></h4>
-              <span class="theevent_intro">On this page you should find all information you need regarding the event itself. If you are searching for information regarding the run, please visit </span><a href="#therun"><span class="this_page">this page</span></a>.
+              <span class="theevent_intro">On this page you should find all information you need regarding the event itself. If you are searching for information regarding the run, please visit </span><a href="#therun" class="tabswitch"><span class="this_page">this page</span></a>.
               <ul class="toc">
                 <h4><span class="contents">Contents</span></h4>
                 <a href="#what"><span class="what_q">What?</span></a>
@@ -212,55 +212,115 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
               <h4><span class="therun_header">The run</span></h4>
-                <span class="therun_intro">This page offers all the information you need to know if you want to participate in the run. If you are looking for information on the event itself, check out </span><a href="#theevent"><span class="this_page">this page</span></a>.
+                <span class="therun_intro">This page offers all the information you need to know if you want to participate in the run. If you are looking for information on the event itself, check out </span><a href="#theevent" class="tabswitch"><span class="this_page">this page</span></a>.
             </div>
           </section>
-		  
-		  <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <section class="section--center ndl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <ul class="toc">
+                <h4><span class="contents">Contents</span></h4>
+                  <a href="#disciplines"><span class="therun_">Disiplines</span></a>
+                  <a href="#24hrun"><span class="therun_disciplines_24hrun_header">24h Run</span></a>
+                  <a href="#12hrun"><span class="therun_disciplines_12hrun_header">12h Run</span></a>
+                  <a href="#6hrun"><span class="therun_disciplines_header">6h Run</span></a>
+                  <a href="#rules"><span class="rules_header">Rules</span></a>
+                  <a href="#registerframe"><span class="registration_card_header">Registration</span></a>
+                  <a href="#participants_frame"><span class="participants_card_header">Participants</span></a>
+              </ul>
+              <h5><span id="disciplines" class="therun_disciplines_header">Disciplines</span></h5>
+              <p>
+                <span class="therun_disciplines_intro">During this event, there are 3 different categories which can be run as a solo runner or in a team. There is a 24h run, a 12h run and a 6h hour run. Team runners run consecutively, never at the same time. If a team changes their runner, the chip must be handed from the running runner to the next runner. Solo runners are obliged to have their chip on them at all times during the run to make sure their laps are counted correctly. Solo runners and team scores are published separately, as teams will most likely perform better</br>All races end at 8pm on Saturday evening, so be patient when the exact distances are measured.</span>
+              </p>
+              <h6><span id="24hrun" class="therun_disciplines_24hrun">24h Run</span></h6>
+              <p><span class="therun_disciplines_24hrun_text">As the name suggests, this run takes a whopping 24 hours, so it's made for the really hardcore runners out there. The race starts at 8pm on Friday July 7th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.</span></p>
+              <h6><span id="12hrun" class="therun_disciplines_12hrun">12h Run</span></h6>
+              <p><span class="therun_disciplines_12hrun_text">As the name suggests, this run takes 12 hours, so it's made for the advanced runners out there. The race starts at 8am on saturday July 8th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.</span></p>
+              <h6><span id="6hrun" class="therun_disciplines_6hrun">6h Run</span></h6>
+              <p><span class="therun_disciplines_6hrun_text">As the name suggests, this run takes a mere 6 hours, so it's made for lazy people ;). The race starts at 2pm on Saturday July 8th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.</span></p>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing" id="rules">
             <div class="mdl-cell mdl-cell--12-col">
               <h4><span class="therun_rules_header">The Rules</span></h4>
-			  <h5><span class="therun_rules_general_header">General</span></h5>
-			  <p><span class="therun_rules_general1">bla</span></p>
-			  <p><span class="therun_rules_general2">bla</span></p>
-			  <p><span class="therun_rules_general3">bla</span></p>
-			  <h5><span class="therun_rules_ranking_header">Ranking</span></h5>
-			  <p><span class="therun_rules_ranking1">bla</span></p>
-			  <p><span class="therun_rules_ranking2">bla</span></p>
-			  <p><span class="therun_rules_ranking3">bla</span></p>
-			  <h5><span class="therun_rules_responsibility_header">Assurance / Responsibility</span></h5>
-			  <p><span class="therun_rules_responsibility1">bla</span></p>
-			  <p><span class="therun_rules_responsibility2">bla</span>
-			    <ul>
-			      <li><span class="therun_rules_responsibility2_1">bla</span></li>
-				  <li><span class="therun_rules_responsibility2_2">bla</span></li>
-				  <li><span class="therun_rules_responsibility2_3">bla</span></li>
-				</ul>
-		      </p>
-			  <p><span class="therun_rules_responsibility3">bla</span></p>
-			  <p><span class="therun_rules_responsibility4">bla</span></p>
-			  <h5><span class="therun_rules_penalities_header">Penalities / Opposition</span></h5>
-			  <p><span class="therun_rules_penalities1">bla</span></p>
-			  <p><span class="therun_rules_penalities2">bla</span></p>
-			  <p><span class="therun_rules_penalities3">bla</span></p>
-			  <h5><span class="therun_rules_interruption_header">Stop</span></h5>
-			  <p><span class="therun_rules_interruption1">bla</span></p>
-			  <p><span class="therun_rules_interruption2">bla</span></p>
-			  <h5><span class="therun_rules_cleanliness_header">Cleanliness</span></h5>
-			  <p><span class="therun_rules_cleanliness1">bla</span></p>
+              <h5><span class="therun_rules_general_header">General</span></h5>
+	      <p><span class="therun_rules_general1">bla</span></p>
+	      <p><span class="therun_rules_general2">bla</span></p>
+	      <p><span class="therun_rules_general3">bla</span></p>
+	      <h5><span class="therun_rules_ranking_header">Ranking</span></h5>
+	      <p><span class="therun_rules_ranking1">bla</span></p>
+	      <p><span class="therun_rules_ranking2">bla</span></p>
+	      <p><span class="therun_rules_ranking3">bla</span></p>
+	      <h5><span class="therun_rules_responsibility_header">Assurance / Responsibility</span></h5>
+	      <p><span class="therun_rules_responsibility1">bla</span></p>
+              <p><span class="therun_rules_responsibility2">bla</span>
+	        <ul>
+	          <li><span class="therun_rules_responsibility2_1">bla</span></li>
+	          <li><span class="therun_rules_responsibility2_2">bla</span></li>
+	          <li><span class="therun_rules_responsibility2_3">bla</span></li>
+	        </ul>
+              </p>
+	      <p><span class="therun_rules_responsibility3">bla</span></p>
+              <p><span class="therun_rules_responsibility4">bla</span></p>
+              <h5><span class="therun_rules_penalities_header">Penalities / Opposition</span></h5>
+	      <p><span class="therun_rules_penalities1">bla</span></p>
+	      <p><span class="therun_rules_penalities2">bla</span></p>
+	      <p><span class="therun_rules_penalities3">bla</span></p>
+              <h5><span class="therun_rules_interruption_header">Stop</span></h5>
+	      <p><span class="therun_rules_interruption1">bla</span></p>
+	      <p><span class="therun_rules_interruption2">bla</span></p>
+	      <h5><span class="therun_rules_cleanliness_header">Cleanliness</span></h5>
+	      <p><span class="therun_rules_cleanliness1">bla</span></p>
             </div>
           </section>
 		  
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="registration_card">
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4><span class="registration">Registration</span></h4>
+                <h4 id="registerframe"><span class="registration_card_header">Registration</span></h4>
                 <iframe src="reg.html" frameboarder="0" onload="this.style.height=this.contentDocument.html.scrollHeight +'px';" height="400px"></iframe>
             </div>
+            <dialog class="mdl-dialog" id="rules_dialog">
+	      <h4 class="mdl-dialog__title"><span class="rules">Rules</sapn></h4>
+	      <div class="mdl-dialog__content">
+                <h5><span class="therun_rules_general_header">General</span></h5>
+	        <p><span class="therun_rules_general1">bla</span></p>
+	        <p><span class="therun_rules_general2">bla</span></p>
+	        <p><span class="therun_rules_general3">bla</span></p>
+	        <h5><span class="therun_rules_ranking_header">Ranking</span></h5>
+	        <p><span class="therun_rules_ranking1">bla</span></p>
+	        <p><span class="therun_rules_ranking2">bla</span></p>
+	        <p><span class="therun_rules_ranking3">bla</span></p>
+	        <h5><span class="therun_rules_responsibility_header">Assurance / Responsibility</span></h5>
+	        <p><span class="therun_rules_responsibility1">bla</span></p>
+	        <p><span class="therun_rules_responsibility2">bla</span>
+	          <ul>
+		    <li><span class="therun_rules_responsibility2_1">bla</span></li>
+	            <li><span class="therun_rules_responsibility2_2">bla</span></li>
+		    <li><span class="therun_rules_responsibility2_3">bla</span></li>
+		  </ul>
+		</p>
+	        <p><span class="therun_rules_responsibility3">bla</span></p>
+                <p><span class="therun_rules_responsibility4">bla</span></p>
+                <h5><span class="therun_rules_penalities_header">Penalities / Opposition</span></h5>
+                <p><span class="therun_rules_penalities1">bla</span></p>
+                <p><span class="therun_rules_penalities2">bla</span></p>
+	        <p><span class="therun_rules_penalities3">bla</span></p>
+		<h5><span class="therun_rules_interruption_header">Stop</span></h5>
+		<p><span class="therun_rules_interruption1">bla</span></p>
+		<p><span class="therun_rules_interruption2">bla</span></p>
+		<h5><span class="therun_rules_cleanliness_header">Cleanliness</span></h5>
+		<p><span class="therun_rules_cleanliness1">bla</span></p>
+              </div>
+	      <div class="mdl-dialog__actions">
+	        <button type="button" class="mdl-button close" id="agreetorules"><span class="iagree">I agree</span></button>
+	        <button type="button" class="mdl-button close" id="disagreetorules"><span class="iagree">I disagree</span></button>
+              </div>
+            </dialog>
           </section>	  
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4><span class="participants">Participants</span></h4>
+                <h4 id="participants_frame"><span class="participants_card_header">Participants</span></h4>
                 <div id="divRRPublish" class="RRPublish"></div>
                 <script type="text/javascript" src="http://my.raceresult.com/RRPublish/load.js.php?lang=de"></script>
                 <script type="text/javascript">
@@ -284,12 +344,12 @@
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
               <h1 class="mdl-mega-footer--heading"><span class="sections">Sections</span></h1>
               <ul class="mdl-mega-footer--link-list">
-                <li><a href="#overview"><span class="overview_header">Overview</span></a></li>
-                <li><a href="#theevent"><span class="theevent_header">The Event</span></a></li>
-                <li><a href="#therun"><span class="therun_header">The Run</span></a></li>
-                <li><a href="#thelocation"><span class="thelocation_header">The Location</span></a></li>
-                <li><a href="#media"><span class="media_header">Media</span></a></li>
-                <li><a href="#faq"><span class="faq_header">FAQ</span></a></li>
+                <li><a href="#overview" class="tabswitch"><span class="overview_header">Overview</span></a></li>
+                <li><a href="#theevent" class="tabswitch"><span class="theevent_header">The Event</span></a></li>
+                <li><a href="#therun" class="tabswitch"><span class="therun_header">The Run</span></a></li>
+                <!--<li><a href="#thelocation" class="tabswitch"><span class="thelocation_header">The Location</span></a></li>
+                <li><a href="#media" class="tabswitch"><span class="media_header">Media</span></a></li>
+                <li><a href="#faq" class="tabswitch"><span class="faq_header">FAQ</span></a></li>-->
               </ul>
             </div>
             <div class="mdl-mega-footer--drop-down-section">
@@ -297,9 +357,10 @@
               <h1 class="mdl-mega-footer--heading"><span class="contact">Contact</span></h1>
               <ul class="mdl-mega-footer--link-list">
                 <li><a href="mailto:24h.birthday.run@gmail.com"><span class="email_us">Email us</span></a></li>
-                <li><a href="#"><span class="contact_form">Contact form</span></a></li>
+                <!--<li><a href="#"><span class="contact_form">Contact form</span></a></li>-->
                 <li>+352 56 07 32 1</li>
                 <li></li>
+                <li>Manon Schockmel, Fiduciaire Accura S.A.</li>
                 <li>12, Avenue du Rock'n'Roll</li>
                 <li>L-4361 Esch-sur-Alzette</li>
               </ul>

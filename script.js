@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("a").click(function() {
+	$(".tabswitch").click(function() {
 		var hrefClicked = $(this).attr("href");
 		if(hrefClicked.match("^#")) {
 			var viewRequested = hrefClicked.substring(hrefClicked.indexOf("#") + 1);
@@ -30,6 +30,19 @@ $(document).ready(function(){
 	showDialogButton.addEventListener('click', function() {
 		changeLangDialog.showModal();
 	});
+
+	var showRulesDialog = document.querySelector("#rules_dialog");
+	var showRulesDialogTrigger = $("#registerframe").contents().find("#RRRegStartButtons div");
+	if (! showRulesDialog.showModal) {
+		dialogPolyfill.registerDialog(showRulesDialog);
+	}
+	showRulesDialogTrigger.click(function() {
+		console.log("click");
+		showRulesDialog.showModal();
+	});
+
+
+
 
 	var overview_header = "Overview";
 	var theevent_header = "The Event";
@@ -67,6 +80,15 @@ $(document).ready(function(){
 	var contact_form = "Contact form";
 	var this_page = "this page";
 	var contents = "Contents";
+	var therun_disciplines_header = "Disciplines";
+	var therun_disciplines_intro = "During this event, there are 3 different categories which can be run as a solo runner or in a team. There is a 24h run, a 12h run and a 6h hour run. Team runners run consecutively, never at the same time. If a team changes their runner, the chip must be handed from the running runner to the next runner. Solo runners are obliged to have their chip on them at all times during the run to make sure their laps are counted correctly. Solo runners and team scores are published separately, as teams will most likely perform better</br>All races end at 8pm on Saturday evening, so be patient when the exact distances are measured.";
+	var therun_disciplines_24hrun = "24h Run";
+	var therun_disciplines_24hrun_text = "As the name suggests, this run takes a whopping 24 hours, so it's made for the really hardcore runners out there. The race starts at 8pm on Friday July 7th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.";
+	var therun_disciplines_12hrun = "12h Run";
+	var therun_disciplines_12hrun_text = "As the name suggests, this run takes 12 hours, so it's made for the advanced runners out there. The race starts at 8am on saturday July 8th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.";
+	var therun_disciplines_6hrun = "6h Run";
+	var therun_disciplines_6hrun_text = "As the name suggests, this run takes a mere 6 hours, so it's made for lazy people ;). The race starts at 2pm on Saturday July 8th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.";
+
 	var therun_rules_general_header = "General";
 	var therun_rules_general1 = "The race is subject to the rules of the FLA (Fédération Luxembourgeoise d‘Athlétisme).";
 	var therun_rules_general2 = "A membership within the FLA is not mandatory.";
@@ -82,7 +104,7 @@ $(document).ready(function(){
 	var therun_rules_responsibility2_2 = "he or she is healthy and sufficiently trained for the strain of such a competition.";
 	var therun_rules_responsibility2_3 = "he or she is participating at their own risk and responsibility.";
 	var therun_rules_responsibility3 = "For participants below legal age, a person entitled to education confirms with the consent form that above mentionned conditions are fulfilled.";
-	var therun_rules_responsibility4 = "We recommend each participant to go see a doctor who can confirm that the participants is able to complete such a race.";
+	var therun_rules_responsibility4 = "We recommend each participant to see a doctor who can confirm that the participants is able to complete such a race.";
 	var therun_rules_penalities_header = "Penalities / Opposition";
 	var therun_rules_penalities1 = "Every unsporting such as remping and each violation of these rules results in the disqualification of the runner or the whole team.";
 	var therun_rules_penalities2 = "A runner or team found to have no 'chip' will be penalized with a 'minus-round'. When they are found without a 'chip' a second time, they will be disqualified.";
@@ -122,6 +144,14 @@ $(document).ready(function(){
 	var theevent_where1_de = 'Das gesammte Event findet statt im "Stade Athlétique Schifflange", welches sich am oberen Ende der "Montée du cimetière" in Schifflange befindet.';
 	var theevent_when1_de = "Das Event geht am Freitag, den 7. Juli 2017 um 20:00 Uhr los. Das Rennen wird am 8. Juli um 20:00 Uhr beendent. Die Party geht jedoch weiter bis in die Nacht zu Sonntag.";
 	var therun_intro_de	= "Diese Seite enthält alles, was Sie über das Rennen wissen müssen. Für Informationen über das Event, besuchen Sie ";
+	var therun_disciplines_header_de = "Disciplines";
+	var therun_disciplines_intro_de = "During this event, there are 3 different categories which can be run as a solo runner or in a team. There is a 24h run, a 12h run and a 6h hour run. Team runners run consecutively, never at the same time. If a team changes their runner, the chip must be handed from the running runner to the next runner. Solo runners are obliged to have their chip on them at all times during the run to make sure their laps are counted correctly. Solo runners and team scores are published separately, as teams will most likely perform better</br>All races end at 8pm on Saturday evening, so be patient when the exact distances are measured.";
+	var therun_disciplines_24hrun_de = "24h Run";
+	var therun_disciplines_24hrun_text_de = "As the name suggests, this run takes a whopping 24 hours, so it's made for the really hardcore runners out there. The race starts at 8pm on Friday July 7th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.";
+	var therun_disciplines_12hrun_de = "12h Run";
+	var therun_disciplines_12hrun_text_de = "As the name suggests, this run takes 12 hours, so it's made for the advanced runners out there. The race starts at 8am on saturday July 8th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.";
+	var therun_disciplines_6hrun_de = "6h Run";
+	var therun_disciplines_6hrun_text_de = "As the name suggests, this run takes a mere 6 hours, so it's made for lazy people ;). The race starts at 2pm on Saturday July 8th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.";
 	var registration_de = "Anmeldung";
 	var participants_de = "Teilnehmerliste";
 	var sections_de = "Unterteilungen";
@@ -184,6 +214,14 @@ $(document).ready(function(){
 	var theevent_why1_fr = "We organized this party because we want to have a big celebration for these two special birthdays, 18 and 50. Plus, we thought this is a perfect opportunity to raise awareness that other people don't have the same luck as we do and help them at the same time.";
 	var theevent_where1_fr = 'The party is set to take place at the "Stade Athlétique Schifflange", which can be found at the top end of "Montée du cimetière" in Schifflange';
 	var theevent_when1_fr = "The event and the run will start on Friday July 7th 2017 at 8 pm. The run will end on Saturday evening at 8 pm, the party however will continue into the night to Sunday.";
+	var therun_disciplines_header_fr = "Disciplines";
+	var therun_disciplines_intro_fr = "During this event, there are 3 different categories which can be run as a solo runner or in a team. There is a 24h run, a 12h run and a 6h hour run. Team runners run consecutively, never at the same time. If a team changes their runner, the chip must be handed from the running runner to the next runner. Solo runners are obliged to have their chip on them at all times during the run to make sure their laps are counted correctly. Solo runners and team scores are published separately, as teams will most likely perform better</br>All races end at 8pm on Saturday evening, so be patient when the exact distances are measured.";
+	var therun_disciplines_24hrun_fr = "24h Run";
+	var therun_disciplines_24hrun_text_fr = "As the name suggests, this run takes a whopping 24 hours, so it's made for the really hardcore runners out there. The race starts at 8pm on Friday July 7th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.";
+	var therun_disciplines_12hrun_fr = "12h Run";
+	var therun_disciplines_12hrun_text_fr = "As the name suggests, this run takes 12 hours, so it's made for the advanced runners out there. The race starts at 8am on saturday July 8th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.";
+	var therun_disciplines_6hrun_fr = "6h Run";
+	var therun_disciplines_6hrun_text_fr = "As the name suggests, this run takes a mere 6 hours, so it's made for lazy people ;). The race starts at 2pm on Saturday July 8th 2017 and ends at 8pm on Saturday July 8th 2017. It is not mandatory to run during the whole time.";
 	var therun_intro_fr = "This page offers all the information you need to know if you want to participate in the run. If you are looking for information on the event itself, check out ";
 	var registration_fr = "Registration";
 	var participants_fr = "Participants";
@@ -226,9 +264,9 @@ $(document).ready(function(){
 			$(".overview_header").text(overview_header_de);
 			$(".theevent_header").text(theevent_header_de);
 			$(".therun_header").text(therun_header_de);
-			$(".thelocation_header").text(thelocation_header_de);
+			/*$(".thelocation_header").text(thelocation_header_de);
 			$(".media_header").text(media_header_de);
-			$(".faq_header").text(faq_header_de);
+			$(".faq_header").text(faq_header_de);*/
 			$(".learn_more").text(learn_more_de);
 			$(".overview_theevent_text").text(overview_theevent_text_de);
 			$(".singlerun_header").text(singlerun_header_de);
@@ -252,9 +290,19 @@ $(document).ready(function(){
 			$(".theevent_why1").text(theevent_why1_de);
 			$(".theevent_when1").text(theevent_when1_de);
 			$(".theevent_where1").text(theevent_where1_de);
+
+			$(".therun_disciplines_header").text(therun_disciplines_header_de);
+			$(".therun_disciplines_intro").html(therun_disciplines_intro_de);
+			$(".therun_disciplines_24hrun").text(therun_disciplines_24hrun_de);
+			$(".therun_disciplines_24hrun_text").text(therun_disciplines_24hrun_text_de);
+			$(".therun_disciplines_12hrun").text(therun_disciplines_12hrun_de);
+			$(".therun_disciplines_12hrun_text").text(therun_disciplines_12hrun_text_de);
+			$(".therun_disciplines_6hrun").text(therun_disciplines_6hrun_de);
+			$(".therun_disciplines_6hrun_text").text(therun_disciplines_6hrun_text_de);
+
 			$(".therun_intro").text(therun_intro_de);
-			$(".registration").text(registration_de);
-			$(".participants").text(participants_de);
+			$(".registration_card_header").text(registration_de);
+			$(".participants_card_header").text(participants_de);
 			$(".sections").text(sections_de);
 			$(".contact").text(contact_de);
 			$(".email_us").text(email_us_de);
@@ -291,9 +339,9 @@ $(document).ready(function(){
 			$(".overview_header").text(overview_header_fr);
 			$(".theevent_header").text(theevent_header_fr);
 			$(".therun_header").text(therun_header_fr);
-			$(".thelocation_header").text(thelocation_header_fr);
+			/*$(".thelocation_header").text(thelocation_header_fr);
 			$(".media_header").text(media_header_fr);
-			$(".faq_header").text(faq_header_fr);
+			$(".faq_header").text(faq_header_fr);*/
 			$(".learn_more").text(learn_more_fr);
 			$(".overview_theevent_text").text(overview_theevent_text_fr);
 			$(".singlerun_header").text(singlerun_header_fr);
@@ -318,8 +366,18 @@ $(document).ready(function(){
 			$(".theevent_when1").text(theevent_when1_fr);
 			$(".theevent_where1").text(theevent_where1_fr);
 			$(".therun_intro").text(therun_intro_fr);
-			$(".registration").text(registration_fr);
-			$(".participants").text(participants_fr);
+
+			$(".therun_disciplines_header").text(therun_disciplines_header_fr);
+			$(".therun_disciplines_intro").html(therun_disciplines_intro_fr);
+			$(".therun_disciplines_24hrun").text(therun_disciplines_24hrun_fr);
+			$(".therun_disciplines_24hrun_text").text(therun_disciplines_24hrun_text_fr);
+			$(".therun_disciplines_12hrun").text(therun_disciplines_12hrun_fr);
+			$(".therun_disciplines_12hrun_text").text(therun_disciplines_12hrun_text_fr);
+			$(".therun_disciplines_6hrun").text(therun_disciplines_6hrun_fr);
+			$(".therun_disciplines_6hrun_text").text(therun_disciplines_6hrun_text_fr);
+
+			$(".registration_card_header").text(registration_fr);
+			$(".participants_card_header").text(participants_fr);
 			$(".sections").text(sections_fr);
 			$(".contact").text(contact_fr);
 			$(".email_us").text(email_us_fr);
@@ -356,9 +414,9 @@ $(document).ready(function(){
 			$(".overview_header").text(overview_header);
 			$(".theevent_header").text(theevent_header);
 			$(".therun_header").text(therun_header);
-			$(".thelocation_header").text(thelocation_header);
+			/*$(".thelocation_header").text(thelocation_header);
 			$(".media_header").text(media_header);
-			$(".faq_header").text(faq_header);
+			$(".faq_header").text(faq_header);*/
 			$(".learn_more").text(learn_more);
 			$(".overview_theevent_text").text(overview_theevent_text);
 			$(".singlerun_header").text(singlerun_header);
@@ -383,8 +441,18 @@ $(document).ready(function(){
 			$(".theevent_when1").text(theevent_when1);
 			$(".theevent_where1").text(theevent_where1);
 			$(".therun_intro").text(therun_intro);
-			$(".registration").text(registration);
-			$(".participants").text(participants);
+
+			$(".therun_disciplines_header").text(therun_disciplines_header);
+			$(".therun_disciplines_intro").html(therun_disciplines_intro);
+			$(".therun_disciplines_24hrun").text(therun_disciplines_24hrun);
+			$(".therun_disciplines_24hrun_text").text(therun_disciplines_24hrun_text);
+			$(".therun_disciplines_12hrun").text(therun_disciplines_12hrun);
+			$(".therun_disciplines_12hrun_text").text(therun_disciplines_12hrun_text);
+			$(".therun_disciplines_6hrun").text(therun_disciplines_6hrun);
+			$(".therun_disciplines_6hrun_text").text(therun_disciplines_6hrun_text);
+
+			$(".registration_card_header").text(registration);
+			$(".participants_card_header").text(participants);
 			$(".sections").text(sections);
 			$(".contact").text(contact);
 			$(".email_us").text(email_us);
